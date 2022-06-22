@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title="Employee Details";
+}
+
+<h2>Employee Details</h2>
+
+@using (Html.BeginForm()) 
+{
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>Employee Name</th>
+                <td>
+                    @Html.TextBox("employeename")  
+                </td>
+            </tr>
+            <tr>
+                <th>Employee Id</th>
+                <td>
+                    @Html.TextBox("employeeid")
+                </td>
+            </tr>
+            <tr>
+                <th>Select Department</th>
+                <td>
+                    @Html.TextBox("department")
+                </td>
+            </tr>
+             <tr>
+                <th>Employee Designation</th>
+                <td>
+                    @Html.TextBox("designation")
+                </td>
+            </tr>
+             <tr>
+                <th>Employee Salary</th>
+                <td>
+                    @Html.TextBox("salary")
+                </td>
+            </tr>
+             <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    
+}

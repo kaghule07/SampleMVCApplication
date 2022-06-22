@@ -36,7 +36,7 @@ namespace SampleMVCApplication.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult ProductList()
+        public IActionResult ProductList1()
         {
             string[] course = { "C#", "ASP.NET", "MVC", "Angular" };
             ViewData["Message"] = "This is my first mvc app";
